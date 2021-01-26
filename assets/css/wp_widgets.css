@@ -1,0 +1,357 @@
+.float{
+	position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 70px;
+    right: 7px;
+	background-color:rgb(77, 194, 71) !important;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	    box-shadow: 0px 0px 4px 2px grey;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:14px;
+}
+.next_float{
+    width:30%;
+    height:auto;
+    background-color: white;
+    position:fixed;
+    bottom:40px;
+	right:40px;
+}
+.f_row{
+    background-color: rgb(77, 194, 71) !important;
+    color: white;
+    width: 100%;
+    height: 68px;
+    border-radius: 30px 30px 0px 0px;
+}
+.s_row{
+    background: #fff linear-gradient(0deg,rgba(37,211,102,0.04), rgba(37,211,102,0.04));
+    display: block;
+    width: 100%;
+    height:237px;
+    border-radius:0px 0px 30px 30px ;
+}
+.plus{
+    transform: rotate(45deg);
+    color: white;
+    float: right;
+    margin: -2px 5px;
+    font-size: 19px;
+    cursor: default;
+}
+.plus_bg{
+    border-radius: 30px;
+    background-color: #00000024;
+    width: 25px;
+    border-color: #00000024;
+    height: 25px;
+    margin: 5% 5%;
+    float: right;
+}
+.opchat{
+    background-color: rgb(77, 194, 71) !important;
+    color: white;
+    width: 40%;
+    height: 50px;
+    margin: -1% 5%;
+    padding: 15px 0px 0px 20px;
+    border-radius: 25px;
+}
+.opchat a {
+color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.opchat a:focus{
+  color: white;
+    text-decoration: none;
+}
+.opchat a:hover{
+    color: white;
+      text-decoration: none;
+  }
+.opchat .fa{
+  font-size: 30px;
+    margin-top: -5px;
+    animation:pulse 1s infinite;
+    border-radius: 50%;
+}
+/* General CSS Setup */
+
+/* container */
+
+
+/* CSS talk bubble */
+.talk-bubble {
+    margin: 25px 45px;
+    display: inline-block;
+    position: relative;
+    width: 85%;
+    height: 55%;
+    background-color: lightyellow;
+    box-shadow: 0px 0px 5px 1px lightgrey;
+}
+
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+transform:rotate(180deg);
+}
+
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+  
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 28px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+  
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+  box-shadow: 1px -9px 7px -4px lightgrey;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+    margin: 40px 17px;
+    font-size: 16px;
+    text-align: center;
+    transform: rotate(-180deg);
+}
+.talktext p, .talktext h6{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-width: 2560px) {
+    .plus_bg{
+      margin: 2% 4% !important;
+      width: 40px;
+    height: 40px;
+    }
+    .next_float{
+      font-size:20px;
+    }
+    .plus{
+      margin: -8px 6px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .opchat a{
+      padding:0% 10%;
+      font-size: 20px;
+    }
+    
+    }
+
+@media (max-width: 1440px) {
+.plus_bg{
+  margin: 2% 5%;
+}
+.next_float{
+  font-size:20px;
+}
+.opchat a {
+    float: right;
+    margin-right: 70px;
+    padding:0%;
+    font-size: 16px;
+}
+.plus_bg {
+  margin: 4% 4% !important;
+  width: 40px;
+  height: 40px;
+}
+.opchat .fa{
+  margin-left: 50px;
+  }
+  .plus{
+    margin: -4px 7px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1024px) {
+    .plus_bg {
+        margin: 5% 5%;
+    }
+    .opchat a {
+        float: right;
+        padding:0%;
+        margin-right: 70px;
+        font-size: 14px;
+    }
+    .opchat .fa {
+      margin-left: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .next_float {
+    width: auto;
+    font-size: 16px;
+  }
+  .opchat a {
+    float: right;
+    padding:0%;
+    margin-right: 90px;
+}
+.plus_bg {
+    margin: 5% 5%;
+}
+}
+  @media (max-width: 667px) {
+    .next_float {
+    width: 80%;
+    }
+    .talk-bubble {
+    margin: 25px 35px;
+    }
+    .opchat a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding:0%;
+    margin-right: 30px;
+    }
+    .plus_bg {
+        margin: 5% 5%;
+    }
+    .opchat .fa {
+      margin-left: 20px;
+  }
+    }
+@media (max-width: 375px) and (min-width: 320px) {
+  .next_float {
+    width: 85%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 22px;
+}
+.talk-bubble {
+    margin: 25px 30px;
+}
+.talktext {
+    font-size: 14px;
+}
+.plus_bg {
+    margin: 5% 5%;
+}
+.opchat .fa {
+  margin-left: 0px !important;
+}
+.opchat a {
+margin-right: 14% ;
+}
+}
+@media (max-width: 319px) and (min-width: 280px) {
+  .next_float {
+    width: 80%;
+    right: 28px;
+    font-size:14px;
+    }
+    .talk-bubble {
+    margin: 25px 25px;
+}
+    .talktext {
+    font-size: 14px;
+        margin: 15px 17px;
+}
+
+.opchat a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding:0%;
+    margin-right: 20px;
+    }
+.plus_bg {
+    margin: 10% 5%;
+}
+}
